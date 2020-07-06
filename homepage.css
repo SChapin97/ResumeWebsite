@@ -1,26 +1,63 @@
 /* Setting global styling */
-
-/* Setting div boxes */
-div.header {
-    /* color */
-    border: 3px solid black;
-    background-color: skyblue;
-
-    /* sizing */
-    margin: 30px;
-    /* width: 50em; */
-    /* height: 20em; */
-    padding: 15px 15px 30px 80px;
-    /* max-width: 1000px */
+body {
+    /* TODO: Populate with default settings */
 }
 
+/* Header settings */
+div.header {
+    border: 3px solid gray;
+    
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: silver;
+
+    padding: 15px 15px 30px 80px;
+}
+
+.header > h1, h2 {
+    font-family: DM Serif Display;
+    src: url(https://fonts.google.com/specimen/DM+Serif+Display?category=Serif,Sans+Serif,Monospace&query=serif#standard-styles);
+
+}
+
+.header > p {
+    font-family: 'Times New Roman', Times, serif;
+}
+/* End of header settings */
+
+
+/* Main information settings */
 div.main_information {
     /* color */
     border: 3px solid blue;
-    /* background-color: skyblue; */
+    background-color: skyblue;
 
-    /* sizing */}
+    /* sizing */
+    display: flex;
+    justify-content: center;
+}
 
+#headshot {
+    order: 1;
+    border: 2px solid black;
+}
+
+#job {
+    order: 2;
+    border: 2px solid black;
+    flex-grow: 2;
+}
+
+#contact {
+    order: 3;
+    border: 2px solid black;
+    flex-grow: 1;
+}
+/* End of main information settings */
+
+
+
+/* Other information settings */
 div.other_information {
     /* color */
     border: 3px solid green;
@@ -28,5 +65,4 @@ div.other_information {
 
     /* sizing */
 }
-
-/* Setting individual element styling */
+/* End of other information settings */

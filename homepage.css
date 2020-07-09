@@ -1,6 +1,8 @@
 /* Setting global styling */
 body {
-    /* TODO: Populate with default settings */
+    /* TODO: Add background and uncomment/change padding */
+    padding: 40px 40px 40px 40px;
+    background-color: red;
 }
 
 /* Header settings */
@@ -33,28 +35,28 @@ div.main_information {
     background-color: skyblue;
 
     /* sizing */
-    display: flex;
-    justify-content: center;
+    overflow: auto;
 }
 
-#headshot {
-    order: 1;
-    border: 2px solid black;
+#headshot > *{
+    float: left;
+    width: 33%;
+    border: 2px solid green;
 }
+/* #headshot > img {
+    max-width: 300px;
+} */
 
 #job {
-    order: 2;
+    margin-left: 33%;
     border: 2px solid black;
-    flex-grow: 2;
 }
 
 #contact {
-    order: 3;
+    margin-left: 33%;
     border: 2px solid black;
-    flex-grow: 1;
 }
 /* End of main information settings */
-
 
 
 /* Other information settings */

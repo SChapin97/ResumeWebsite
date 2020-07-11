@@ -2,14 +2,18 @@
 body {
     /* TODO: Add background and uncomment/change padding */
     padding: 40px 40px 40px 40px;
-    background-color: red;
+    /* background-color: red; */
+    background-image: url('https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
 /* Header settings */
 div.header {
-    border: 3px solid gray;
+    border: 2dpx solid black;
     
-    background-color: black;
+    /* background-color: black; */
+    background-image: url('https://images.pexels.com/photos/785429/pexels-photo-785429.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
     color: silver;
 
@@ -19,7 +23,6 @@ div.header {
 .header > h1, h2 {
     font-family: DM Serif Display;
     src: url(https://fonts.google.com/specimen/DM+Serif+Display?category=Serif,Sans+Serif,Monospace&query=serif#standard-styles);
-
 }
 
 .header > p {
@@ -36,24 +39,22 @@ div.main_information {
 
     /* sizing */
     overflow: auto;
+    clear: left;
 }
 
-#headshot > *{
+#headshot > * {
     float: left;
-    width: 33%;
+    max-width: 250px;
+    max-height: 250px;
     border: 2px solid green;
 }
-/* #headshot > img {
-    max-width: 300px;
-} */
 
 #job {
-    margin-left: 33%;
     border: 2px solid black;
 }
 
 #contact {
-    margin-left: 33%;
+    /* margin-left: 33%; */
     border: 2px solid black;
 }
 /* End of main information settings */
